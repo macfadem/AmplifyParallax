@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Libre+Franklin:wght@500&family=Questrial&display=swap');
+
+:root {
+    --darksky: #1B1B34;
+    --lightgrey: #BBB8C6;
+    --white: #FFFBFB;
+    --purple: #9873A9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
+}
+
+body {
+    position: relative;
+    background: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scroll-padding-top: 10px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.logo {
+    max-height: 3rem;
+    pointer-events: none;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: var(--purple);
+}
+
+.parallax,
+.about {
+    scroll-margin-top: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.about-content {
+    flex: 1;
+    padding: 0 100px 0 100px;
+    text-align: left;
+}
+
+.about-text {
+    flex: 1;
+    font-size: 1.2rem;
+    color: var(--white);
+    line-height: 1.5;
+    padding: 0 100px 0 100px;
+}
+
+#about-heading {
+    font-family: 'Inter', sans-serif;
+    font-size: 5rem;
+    color: var(--white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#about-subheading {
+    font-size: 2rem;
+    color: var(--lightgrey);
+    margin-bottom: 20px;
+}
+
+
+.parallax-layer {
+    position: relative;
+    transform-origin: center;
+    transition: transform 0.3s ease-out;
+}
+
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.sec {
+    position: relative;
+    padding: 7rem;
+    margin: 0 30rem;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.sec h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 5rem;
+    color: var(--white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.sec form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sec form label {
+    flex: 1;
+    font-size: 1.2rem;
+    color: var(--white);
+    line-height: 1.5;
+}
+
+.sec form input[type="text"],
+.sec form input[type="email"],
+.sec form textarea {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 0px solid #ccc;
+    border-radius: 3px;
+}
+
+.sec form input[type="submit"] {
+    padding: 10px 20px;
+}
+
+
+#heading {
+    position: absolute;
+    top: 20rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 5rem;
+    color: var(--white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+    display: block;
+    margin: 20px auto;
+    height: 50px;
+    width: 214px;
+    padding: 10px 20px;
+    background-color: var(--purple);
+    color: var(--white);
+    box-shadow: 0px 10px 10px 0px #00000040;
+    opacity: 0.9;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: calc(27rem + 5rem);
+}
+
+.button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#subheading {
+    position: absolute;
+    top: 27rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 4rem;
+    font-weight: 300;
+    color: var(--white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
