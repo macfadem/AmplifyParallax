@@ -14,9 +14,13 @@
     font-family: 'Questrial', sans-serif;
 }
 
+main {
+    overflow: hidden;
+}
+
 body {
     position: relative;
-    background: #fff;
+    background: rgb(237, 184, 163);
     min-height: 100vh;
     overflow-x: hidden;
     scroll-snap-type: y mandatory;
@@ -36,6 +40,14 @@ header {
     z-index: 100;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    color: var(--lightgrey);
+    background-color: var(--darksky);
+}
 
 .logo {
     max-height: 3rem;
@@ -108,43 +120,43 @@ header {
     pointer-events: none;
 }
 
-.sec {
+.contact {
     position: relative;
-    padding: 7rem;
-    margin: 0 30rem;
+    padding: 10rem;
+    margin: 0 15rem 12rem 15rem;
     border-radius: 5px;
     align-items: center;
 }
 
-.sec h2 {
+.contact h2 {
     font-family: 'Inter', sans-serif;
     font-size: 5rem;
     color: var(--white);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.sec form {
+.contact form {
     display: flex;
     flex-direction: column;
 }
 
-.sec form label {
+.contact form label {
     flex: 1;
     font-size: 1.2rem;
     color: var(--white);
     line-height: 1.5;
 }
 
-.sec form input[type="text"],
-.sec form input[type="email"],
-.sec form textarea {
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea {
     padding: 5px;
     margin-bottom: 10px;
     border: 0px solid #ccc;
     border-radius: 3px;
 }
 
-.sec form input[type="submit"] {
+.contact form input[type="submit"] {
     padding: 10px 20px;
 }
 
