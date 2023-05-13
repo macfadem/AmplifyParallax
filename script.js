@@ -13,7 +13,7 @@ window.addEventListener("scroll", () => {
         layer.style.marginTop = value + "px";
       } else {
         layer.style.marginTop = (initialMarginTops[index] + value * (index) * 0.2) * 0.2 + value * 1.2 + "px";
-        layer.style.transform = `scale(${1 + value * scaleFactors[index] * 0.5}) translateX(${1 + value * scaleFactors[index] * -200}px)`;
+        layer.style.transform = `scale(${1 + value * scaleFactors[index] * 0.5})`;
       }
     });
   }
