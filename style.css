@@ -96,6 +96,7 @@ footer {
     font-size: 5rem;
     color: var(--white);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
 }
 
 #about-subheading {
@@ -116,7 +117,7 @@ footer {
     position: absolute;
     top: -1%;
     left: -5%;
-    width: 120%;
+    height: 130%;
     pointer-events: none;
 }
 
@@ -202,4 +203,76 @@ footer {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+@media only screen and (max-width: 800px) {
+    .parallax {
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 
+    #heading {
+        text-align: center;
+        position: relative;
+        top: unset;
+        left: unset;
+        font-size: 3.5rem;
+    }
+
+    #subheading {
+        text-align: center;
+        position: relative;
+        top: unset;
+        left: unset;
+        font-size: 2rem;
+    }
+
+    #about-heading {
+        text-align: center;
+        position: relative;
+        top: unset;
+        left: unset;
+        font-size: 3rem;
+
+    }
+
+    .contact h2 {
+        font-size: 3.5rem;
+    }
+
+    .button {
+        position: relative;
+        top: unset;
+    }
+
+    .about-content {
+        padding: 0 1rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .about-text {
+        padding: 1rem;
+        margin: 1rem;
+        font-size: 1rem;
+    }
+
+    .contact {
+        padding: 2rem;
+        margin: 0 1rem;
+    }
+
+    header {
+        padding: 15px 20px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    #contactButton {
+        margin-bottom: 10rem;
+    }
+}
